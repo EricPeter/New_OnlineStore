@@ -196,8 +196,8 @@ session_start();
 										<option value="1">Beads</option>
 										<option value="1">Necklaces</option>
 									</select>
-									<input class="input" id="search" type="text" placeholder="Search here">
-									<button type="submit" id="search_btn" class="search-btn">Search</button>
+									<input class="input" id="search" type="text" placeholder="Search here"><button type="submit" id="search_btn" class="search-btn">Search</button>
+									
 								</form>
 							</div>
 						</div>

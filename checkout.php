@@ -277,11 +277,11 @@ span.price {
 		</div>
 	</div>
 </section>
-		<div id="newsletter" class="section">
+		<!-- <div id="newsletter" class="section"> -->
 			<!-- container -->
-			<div class="container">
+			<!-- <div class="container"> -->
 				<!-- row -->
-				<div class="row">
+				<!-- <div class="row">
 					<div class="col-md-12">
 						<div class="newsletter">
 							<p>Sign Up for the <strong>NEWSLETTER</strong></p>
@@ -305,11 +305,11 @@ span.price {
 							</ul>
 						</div>
 					</div>
-				</div>
+				</div> -->
 				<!-- /row -->
-			</div>
+			<!-- </div> -->
 			<!-- /container -->
-		</div>
+	<!-- 	</div> -->
 		
 <?php
 include "footer.php";
