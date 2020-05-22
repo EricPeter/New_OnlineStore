@@ -61,10 +61,13 @@ include "header.php";
 								
 								$sql = " SELECT * FROM products ";
 								$sql = " SELECT * FROM products WHERE product_id = $product_id";
+
+							
 								if (!$con) {
 									die("Connection failed: " . mysqli_connect_error());
 								}
 								$result = mysqli_query($con, $sql);
+
 								if (mysqli_num_rows($result) > 0) 
 								{
 									while($row = mysqli_fetch_assoc($result)) 
@@ -119,14 +122,14 @@ include "header.php";
 									?>
 									<!-- FlexSlider -->
 									
-									<?php 
-									echo '
+									
+								
 									
                                     
                                    
                     <div class="col-md-5">
 						<div class="product-details">
-							<h2 class="product-name">'.$row['product_title'].'</h2>
+							<h2 class="product-name"><?php echo $row['product_title'];?></h2>
 							<div>
 								<div class="product-rating">
 									<i class="fa fa-star"></i>
@@ -138,10 +141,10 @@ include "header.php";
 								<a class="review-link" href="#review-form">10 Review(s) | Add your review</a>
 							</div>
 							<div>
-								<h3 class="product-price">$'.$row['product_price'].'<del class="product-old-price">$990.00</del></h3>
+								<h3 class="product-price">UGX <?php echo $row['product_price']?><del class="product-old-price"></del></h3>
 								<span class="product-available">In Stock</span>
 							</div>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+							<p><?php echo $row['product_desc']?></p>
 
 							<div class="product-options">
 								<label>
@@ -168,7 +171,7 @@ include "header.php";
 									</div>
 								</div>
 								<div class="btn-group" style="margin-left: 25px; margin-top: 15px">
-								<button class="add-to-cart-btn" pid="'.$row['product_id'].'"  id="product" ><i class="fa fa-shopping-cart"></i> add to cart</button>
+								<button class="add-to-cart-btn" pid="<?php echo $row['product_id'];?>"  id="product" ><i class="fa fa-shopping-cart"></i> add to cart</button>
                                 </div>
 								
 								
@@ -181,8 +184,8 @@ include "header.php";
 
 							<ul class="product-links">
 								<li>Category:</li>
-								<li><a href="#">Headphones</a></li>
-								<li><a href="#">Accessories</a></li>
+								<li><a href="#">'.$query_result.'</a></li>
+								
 							</ul>
 
 							<ul class="product-links">
@@ -443,7 +446,7 @@ include "header.php";
 							
 						</div>
 					</div>
-                    ';
+                    <?php 
 									$_SESSION['product_id'] = $row['product_id'];
 									}
 								} 
@@ -481,7 +484,7 @@ include "header.php";
 									<div class='product-body'>
 										<p class='product-category'>$cat_name</p>
 										<h3 class='product-name header-cart-item-name'><a href='product.php?p=$pro_id'>$pro_title</a></h3>
-										<h4 class='product-price header-cart-item-info'>$pro_price<del class='product-old-price'>$990.00</del></h4>
+										<h4 class='product-price header-cart-item-info'>$pro_price<del class='product-old-price'></del></h4>
 										<div class='product-rating'>
 											<i class='fa fa-star'></i>
 											<i class='fa fa-star'></i>
