@@ -133,11 +133,10 @@ span.price {
 						<div class="row">
 						<div class="col-50">
 							<label for="state">State</label>
-							<input type="text" id="state" name="state" class="form-control" pattern="^[a-zA-Z ]+$" required>
+							<input type="text" id="state" name="state" class="form-control" pattern="^[a-zA-Z ]+$" >
 						</div>
 						<div class="col-50">
-							<label for="zip">Zip</label>
-							<input type="text" id="zip" name="zip" class="form-control" pattern="^[0-9]{6}(?:-[0-9]{4})?$" required>
+							
 						</div>
 						</div>
 					</div>
@@ -169,8 +168,7 @@ span.price {
 						
 						<div class="col-50">
 							<div class="form-group CVV">
-								<label for="cvv">CVV</label>
-								<input type="text" class="form-control" name="cvv" id="cvv" required>
+								
 						</div>
 						</div>
 					</div>
@@ -277,11 +275,11 @@ span.price {
 		</div>
 	</div>
 </section>
-		<div id="newsletter" class="section">
+		<!-- <div id="newsletter" class="section"> -->
 			<!-- container -->
-			<div class="container">
+			<!-- <div class="container"> -->
 				<!-- row -->
-				<div class="row">
+				<!-- <div class="row">
 					<div class="col-md-12">
 						<div class="newsletter">
 							<p>Sign Up for the <strong>NEWSLETTER</strong></p>
@@ -305,11 +303,11 @@ span.price {
 							</ul>
 						</div>
 					</div>
-				</div>
+				</div> -->
 				<!-- /row -->
-			</div>
+			<!-- </div> -->
 			<!-- /container -->
-		</div>
+	<!-- 	</div> -->
 		
 <?php
 include "footer.php";

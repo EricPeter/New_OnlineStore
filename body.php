@@ -224,7 +224,7 @@
 									<div class='product-body'>
 										<p class='product-category'>$cat_name</p>
 										<h3 class='product-name header-cart-item-name'><a href='product.php?p=$pro_id'>$pro_title</a></h3>
-										<h4 class='product-price header-cart-item-info'>$pro_price<del class='product-old-price'>$990.00</del></h4>
+										<h4 class='product-price header-cart-item-info'>$pro_price<del class='product-old-price'>shs990.00</del></h4>
 										<div class='product-rating'>
 											<i class='fa fa-star'></i>
 											<i class='fa fa-star'></i>
@@ -356,7 +356,7 @@
 									<div class='product-body'>
 										<p class='product-category'>$cat_name</p>
 										<h3 class='product-name header-cart-item-name'><a href='product.php?p=$pro_id'>$pro_title</a></h3>
-										<h4 class='product-price header-cart-item-info'>$pro_price<del class='product-old-price'>$990.00</del></h4>
+										<h4 class='product-price header-cart-item-info'>$pro_price<del class='product-old-price'>shs990.00</del></h4>
 										<div class='product-rating'>
 											<i class='fa fa-star'></i>
 											<i class='fa fa-star'></i>
@@ -431,7 +431,7 @@
 									<div class="product-body">
 										<p class="product-category">Category</p>
 										<h3 class="product-name"><a href="#">product name goes here</a></h3>
-										<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+										<h4 class="product-price">shs980.00 <del class="product-old-price">shs990.00</del></h4>
 									</div>
 								</div>
 								<!-- /product widget -->
@@ -444,7 +444,7 @@
 									<div class="product-body">
 										<p class="product-category">Category</p>
 										<h3 class="product-name"><a href="#">product name goes here</a></h3>
-										<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+										<h4 class="product-price">shs980.00 <del class="product-old-price">shs990.00</del></h4>
 									</div>
 								</div>
 								<!-- /product widget -->
@@ -457,7 +457,7 @@
 									<div class="product-body">
 										<p class="product-category">Category</p>
 										<h3 class="product-name"><a href="#">product name goes here</a></h3>
-										<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+										<h4 class="product-price">shs980.00 <del class="product-old-price">shs990.00</del></h4>
 									</div>
 								</div>
 								<!-- product widget -->
@@ -483,7 +483,7 @@
 									<div class="product-body">
 										<p class="product-category">Category</p>
 										<h3 class="product-name"><a href="#">product name goes here</a></h3>
-										<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+										<h4 class="product-price">shs980.00 <del class="product-old-price">shs990.00</del></h4>
 									</div>
 								</div>
 								<!-- /product widget -->
@@ -496,7 +496,7 @@
 									<div class="product-body">
 										<p class="product-category">Category</p>
 										<h3 class="product-name"><a href="#">product name goes here</a></h3>
-										<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+										<h4 class="product-price">shs980.00 <del class="product-old-price">shs990.00</del></h4>
 									</div>
 								</div>
 								<!-- /product widget -->
@@ -509,7 +509,7 @@
 									<div class="product-body">
 										<p class="product-category">Category</p>
 										<h3 class="product-name"><a href="#">product name goes here</a></h3>
-										<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+										<h4 class="product-price">shs980.00 <del class="product-old-price">shs990.00</del></h4>
 									</div>
 								</div>
 								<!-- product widget -->
@@ -524,7 +524,7 @@
 									<div class="product-body">
 										<p class="product-category">Category</p>
 										<h3 class="product-name"><a href="#">product name goes here</a></h3>
-										<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+										<h4 class="product-price">shs980.00 <del class="product-old-price">shs990.00</del></h4>
 									</div>
 								</div>
 								<!-- /product widget -->
@@ -537,7 +537,7 @@
 									<div class="product-body">
 										<p class="product-category">Category</p>
 										<h3 class="product-name"><a href="#">product name goes here</a></h3>
-										<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+										<h4 class="product-price">shs980.00 <del class="product-old-price">shs990.00</del></h4>
 									</div>
 								</div>
 								<!-- /product widget -->
@@ -550,7 +550,7 @@
 									<div class="product-body">
 										<p class="product-category">Category</p>
 										<h3 class="product-name"><a href="#">product name goes here</a></h3>
-										<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+										<h4 class="product-price">shs980.00 <del class="product-old-price">shs990.00</del></h4>
 									</div>
 								</div>
 								<!-- product widget -->
@@ -580,7 +580,7 @@
 									<div class="product-body">
 										<p class="product-category">Category</p>
 										<h3 class="product-name"><a href="#">product name goes here</a></h3>
-										<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+										<h4 class="product-price">shs980.00 <del class="product-old-price">shs990.00</del></h4>
 									</div>
 								</div>
 								<!-- /product widget -->
@@ -593,7 +593,7 @@
 									<div class="product-body">
 										<p class="product-category">Category</p>
 										<h3 class="product-name"><a href="#">product name goes here</a></h3>
-										<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+										<h4 class="product-price">shs980.00 <del class="product-old-price">shs990.00</del></h4>
 									</div>
 								</div>
 								<!-- /product widget -->
@@ -606,7 +606,7 @@
 									<div class="product-body">
 										<p class="product-category">Category</p>
 										<h3 class="product-name"><a href="#">product name goes here</a></h3>
-										<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+										<h4 class="product-price">shs980.00 <del class="product-old-price">shs990.00</del></h4>
 									</div>
 								</div>
 								<!-- product widget -->
@@ -621,7 +621,7 @@
 									<div class="product-body">
 										<p class="product-category">Category</p>
 										<h3 class="product-name"><a href="#">product name goes here</a></h3>
-										<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+										<h4 class="product-price">shs980.00 <del class="product-old-price">shs990.00</del></h4>
 									</div>
 								</div>
 								<!-- /product widget -->
@@ -635,7 +635,7 @@
 									<div class="product-body">
 										<p class="product-category">Category</p>
 										<h3 class="product-name"><a href="#">product name goes here</a></h3>
-										<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+										<h4 class="product-price">shs980.00 <del class="product-old-price">shs990.00</del></h4>
 									</div>
 								</div>
 								<!-- /product widget -->
@@ -648,7 +648,7 @@
 									<div class="product-body">
 										<p class="product-category">Category</p>
 										<h3 class="product-name"><a href="#">product name goes here</a></h3>
-										<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+										<h4 class="product-price">shs980.00 <del class="product-old-price">shs990.00</del></h4>
 									</div>
 								</div>
 								<!-- product widget -->

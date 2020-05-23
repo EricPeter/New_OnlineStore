@@ -8,11 +8,11 @@ if (isset($_SESSION["uid"])) {
 	$address = $_POST['address'];
     $city = $_POST['city'];
     $state = $_POST['state'];
-    $zip= $_POST['zip'];
+    // $zip= $_POST['zip'];
     $cardname= $_POST['cardname'];
     $cardnumber= $_POST['cardNumber'];
     $expdate= $_POST['expdate'];
-    $cvv= $_POST['cvv'];
+    // $cvv= $_POST['cvv'];
     $user_id=$_SESSION["uid"];
     $cardnumberstr=(string)$cardnumber;
     $total_count=$_POST['total_count'];
@@ -35,9 +35,9 @@ if (isset($_SESSION["uid"])) {
 
 	$sql = "INSERT INTO `orders_info` 
 	(`order_id`,`user_id`,`f_name`, `email`,`address`, 
-	`city`, `state`, `zip`, `cardname`,`cardnumber`,`expdate`,`prod_count`,`total_amt`,`cvv`) 
+	`city`, `state`,  `cardname`,`cardnumber`,`expdate`,`prod_count`,`total_amt`) 
 	VALUES ($order_id, '$user_id','$f_name','$email', 
-    '$address', '$city', '$state', '$zip','$cardname','$cardnumberstr','$expdate','$total_count','$prod_total','$cvv')";
+    '$address', '$city', '$state', '$cardname','$cardnumberstr','$expdate','$total_count','$prod_total')";
 
 
     if(mysqli_query($con,$sql)){

@@ -141,7 +141,7 @@ include "header.php";
 								<a class="review-link" href="#review-form">10 Review(s) | Add your review</a>
 							</div>
 							<div>
-								<h3 class="product-price">UGX <?php echo $row['product_price']?><del class="product-old-price"></del></h3>
+								<h3 class="product-price">Shs'.$row['product_price'].'<del class="product-old-price">Shs 990.00</del></h3>
 								<span class="product-available">In Stock</span>
 							</div>
 							<p><?php echo $row['product_desc']?></p>
@@ -484,7 +484,11 @@ include "header.php";
 									<div class='product-body'>
 										<p class='product-category'>$cat_name</p>
 										<h3 class='product-name header-cart-item-name'><a href='product.php?p=$pro_id'>$pro_title</a></h3>
+<<<<<<< HEAD
 										<h4 class='product-price header-cart-item-info'>$pro_price<del class='product-old-price'></del></h4>
+=======
+										<h4 class='product-price header-cart-item-info'>$pro_price<del class='product-old-price'>Shs990.00</del></h4>
+>>>>>>> 0f1047fd8a12f0a1b24f2c2636a7da296c5de836
 										<div class='product-rating'>
 											<i class='fa fa-star'></i>
 											<i class='fa fa-star'></i>
