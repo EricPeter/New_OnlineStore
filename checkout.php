@@ -115,16 +115,11 @@ span.price {
 		echo'
 			<div class="col-75">
 				<div class="container-checkout">
-<<<<<<< HEAD
 				<form action="mm_pay.php" method="post">
-=======
-				<form id="checkout_form" action="checkout_process.php" method="POST" class="was-validated">
->>>>>>> 4975cbbc75d7a84598370cab7b3c19945c5e1de5
 
 					<div class="row-checkout">
 					
 					<div class="col-50">
-<<<<<<< HEAD
 						<h3>Payment with Mobile Money</h3>
 						<label for="fname">Mobile Money Number</label>
 				
@@ -142,64 +137,6 @@ span.price {
 						
                     
 					</div>';
-=======
-						<h3>Billing Address</h3>
-						<label for="fname"><i class="fa fa-user" ></i> Full Name</label>
-						<input type="text" id="fname" class="form-control" name="firstname" pattern="^[a-zA-Z ]+$"  value="'.$row["first_name"].' '.$row["last_name"].'">
-						<label for="email"><i class="fa fa-envelope"></i> Email</label>
-						<input type="text" id="email" name="email" class="form-control" pattern="^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9]+(\.[a-z]{2,4})$" value="'.$row["email"].'" required>
-						<label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
-						<input type="text" id="adr" name="address" class="form-control" value="'.$row["address1"].'" required>
-						<label for="city"><i class="fa fa-institution"></i> City</label>
-						<input type="text" id="city" name="city" class="form-control" value="'.$row["address2"].'" pattern="^[a-zA-Z ]+$" required>
-
-						<div class="row">
-						<div class="col-50">
-							<label for="state">State</label>
-							<input type="text" id="state" name="state" class="form-control" pattern="^[a-zA-Z ]+$" >
-						</div>
-						<div class="col-50">
-							
-						</div>
-						</div>
-					</div>
-					
-					
-					<div class="col-50">
-						<h3>Payment</h3>
-						<label for="fname">Accepted Cards</label>
-						<div class="icon-container">
-						<i class="fa fa-cc-visa" style="color:navy;"></i>
-						<i class="fa fa-cc-amex" style="color:blue;"></i>
-						<i class="fa fa-cc-mastercard" style="color:red;"></i>
-						<i class="fa fa-cc-discover" style="color:orange;"></i>
-						</div>
-						
-						
-						<label for="cname">Name on Card</label>
-						<input type="text" id="cname" name="cardname" class="form-control" pattern="^[a-zA-Z ]+$" required>
-						
-						<div class="form-group" id="card-number-field">
-                        <label for="cardNumber">Card Number</label>
-                        <input type="text" class="form-control" id="cardNumber" name="cardNumber" required>
-                    </div>
-						<label for="expdate">Exp Date</label>
-						<input type="text" id="expdate" name="expdate" class="form-control" pattern="^((0[1-9])|(1[0-2]))\/(\d{2})$" placeholder="12/22"required>
-						
-
-						<div class="row">
-						
-						<div class="col-50">
-							<div class="form-group CVV">
-								
-						</div>
-						</div>
-					</div>
-					</div>
-					</div>
-					<label><input type="CHECKBOX" name="q" class="roomselect" value="conform" required> Shipping address same as billing
-					</label>';
->>>>>>> 4975cbbc75d7a84598370cab7b3c19945c5e1de5
 					$i=1;
 					$total=0;
 					$total_count=$_POST['total_count'];
@@ -220,7 +157,6 @@ span.price {
 						$i++;
 					}
 					
-<<<<<<< HEAD
 				echo'
 				<br /><br />
 				<h1 class="text-center">OR</h1> <br /><br />	
@@ -231,21 +167,10 @@ span.price {
 					
 					
 					<input type="submit" id="submit" value="Payment on Delivery" class="checkout-btn">
-=======
-				echo'	
-				<input type="hidden" name="total_count" value="'.$total_count.'">
-					<input type="hidden" name="total_price" value="'.$total.'">
-					
-					<input type="submit" id="submit" value="Continue to checkout" class="checkout-btn">
->>>>>>> 4975cbbc75d7a84598370cab7b3c19945c5e1de5
 				</form>
 				</div>
 			</div>
 			';
-<<<<<<< HEAD
-
-=======
->>>>>>> 4975cbbc75d7a84598370cab7b3c19945c5e1de5
 		}else{
 			echo"<script>window.location.href = 'cart.php'</script>";
 		}
@@ -316,8 +241,6 @@ span.price {
 		</div>
 	</div>
 </section>
-<<<<<<< HEAD
-=======
 		<!-- <div id="newsletter" class="section"> -->
 			<!-- container -->
 			<!-- <div class="container"> -->
@@ -351,7 +274,6 @@ span.price {
 			<!-- </div> -->
 			<!-- /container -->
 	<!-- 	</div> -->
->>>>>>> 4975cbbc75d7a84598370cab7b3c19945c5e1de5
 		
 <?php
 include "footer.php";
