@@ -138,16 +138,16 @@ include "header.php";
 									<i class="fa fa-star"></i>
 									<i class="fa fa-star-o"></i>
 								</div>
-								<a class="review-link" href="#review-form">10 Review(s) | Add your review</a>
+								<a class="review-link" href="#review-form"></a>
 							</div>
 							<div>
-								<h3 class="product-price">Shs'.$row['product_price'].'<del class="product-old-price">Shs 990.00</del></h3>
+								<h3 class="product-price">Shs <?php echo $row['product_price']?><del class="product-old-price"></del></h3>
 								<span class="product-available">In Stock</span>
 							</div>
-							<p><?php echo $row['product_desc']?></p>
+							
 
 							<div class="product-options">
-								<label>
+								<!-- <label>
 									Size
 									<select class="input-select">
 										<option value="0">X</option>
@@ -158,17 +158,17 @@ include "header.php";
 									<select class="input-select">
 										<option value="0">Red</option>
 									</select>
-								</label>
+								</label> -->
 							</div>
 
 							<div class="add-to-cart">
 								<div class="qty-label">
-									Qty
+									<!-- Qty
 									<div class="input-number">
 										
 										<span class="qty-up">+</span>
 										<span class="qty-down">-</span>
-									</div>
+									</div> -->
 								</div>
 								<div class="btn-group" style="margin-left: 25px; margin-top: 15px">
 								<button class="add-to-cart-btn" pid="<?php echo $row['product_id'];?>"  id="product" ><i class="fa fa-shopping-cart"></i> add to cart</button>
@@ -177,24 +177,24 @@ include "header.php";
 								
 							</div>
 
-							<ul class="product-btns">
+							<!-- <ul class="product-btns">
 								<li><a href="#"><i class="fa fa-heart-o"></i> add to wishlist</a></li>
 								<li><a href="#"><i class="fa fa-exchange"></i> add to compare</a></li>
-							</ul>
+							</ul> -->
 
-							<ul class="product-links">
+							<!-- <ul class="product-links">
 								<li>Category:</li>
-								<li><a href="#">'.$query_result.'</a></li>
+								<li><a href="#"></a></li>
 								
-							</ul>
+							</ul> -->
 
-							<ul class="product-links">
+							<!-- <ul class="product-links">
 								<li>Share:</li>
 								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
 								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
 								<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
 								<li><a href="#"><i class="fa fa-envelope"></i></a></li>
-							</ul>
+							</ul> -->
 
 						</div>
 					</div>
@@ -218,8 +218,8 @@ include "header.php";
 							<!-- product tab nav -->
 							<ul class="tab-nav">
 								<li class="active"><a data-toggle="tab" href="#tab1">Description</a></li>
-								<li><a data-toggle="tab" href="#tab2">Details</a></li>
-								<li><a data-toggle="tab" href="#tab3">Reviews (3)</a></li>
+								<!-- <li><a data-toggle="tab" href="#tab2">Details</a></li>
+								<li><a data-toggle="tab" href="#tab3">Reviews (3)</a></li> -->
 							</ul>
 							<!-- /product tab nav -->
 
@@ -229,26 +229,26 @@ include "header.php";
 								<div id="tab1" class="tab-pane fade in active">
 									<div class="row">
 										<div class="col-md-12">
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+											<p><?php echo $row['product_desc']?></p>
 										</div>
 									</div>
 								</div>
 								<!-- /tab1  -->
 
 								<!-- tab2  -->
-								<div id="tab2" class="tab-pane fade in">
+								<!-- <div id="tab2" class="tab-pane fade in">
 									<div class="row">
 										<div class="col-md-12">
 											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 										</div>
 									</div>
-								</div>
+								</div> -->
 								<!-- /tab2  -->
 
 								<!-- tab3  -->
-								<div id="tab3" class="tab-pane fade in">
+								<!-- <div id="tab3" class="tab-pane fade in">
 									<div class="row">
-										<!-- Rating -->
+									
 										<div class="col-md-3">
 											<div id="rating">
 												<div class="rating-avg">
@@ -330,9 +330,8 @@ include "header.php";
 												</ul>
 											</div>
 										</div>
-										<!-- /Rating -->
+										
 
-										<!-- Reviews -->
 										<div class="col-md-6">
 											<div id="reviews">
 												<ul class="reviews">
@@ -394,9 +393,9 @@ include "header.php";
 												</ul>
 											</div>
 										</div>
-										<!-- /Reviews -->
+										
 
-										<!-- Review Form -->
+										
 										<div class="col-md-3 mainn">
 											<div id="review-form">
 												<form class="review-form">
@@ -417,11 +416,11 @@ include "header.php";
 												</form>
 											</div>
 										</div>
-										<!-- /Review Form -->
+										
 									</div>
 								</div>
-								<!-- /tab3  -->
-							</div>
+							
+							</div> -->
 							<!-- /product tab content  -->
 						</div>
 					</div>
@@ -484,11 +483,7 @@ include "header.php";
 									<div class='product-body'>
 										<p class='product-category'>$cat_name</p>
 										<h3 class='product-name header-cart-item-name'><a href='product.php?p=$pro_id'>$pro_title</a></h3>
-<<<<<<< HEAD
-										<h4 class='product-price header-cart-item-info'>$pro_price<del class='product-old-price'></del></h4>
-=======
-										<h4 class='product-price header-cart-item-info'>$pro_price<del class='product-old-price'>Shs990.00</del></h4>
->>>>>>> 0f1047fd8a12f0a1b24f2c2636a7da296c5de836
+										<h4 class='product-price header-cart-item-info'>Shs $pro_price<del class='product-old-price'></del></h4>
 										<div class='product-rating'>
 											<i class='fa fa-star'></i>
 											<i class='fa fa-star'></i>
@@ -533,7 +528,7 @@ include "header.php";
 
 		<!-- FOOTER -->
 <?php
-include "newslettter.php";
+// include "newslettter.php";
 include "footer.php";
 
 ?>
