@@ -91,7 +91,7 @@ if(isset($_POST["getProducthome"])){
 									<div class='product-body'>
 										<p class='product-category'>$cat_name</p>
 										<h3 class='product-name'><a href='product.php?p=$pro_id'>$pro_title</a></h3>
-										<h4 class='product-price'>$pro_price<del class='product-old-price'>shs990.00</del></h4>
+										<h4 class='product-price'>Shs $pro_price<del class='product-old-price'></del></h4>
 									</div></a>
 								</div>
                         
@@ -110,7 +110,7 @@ if(isset($_POST["gethomeProduct"])){
 		$start = 0;
 	}
     
-	$product_query = "SELECT * FROM products,categories WHERE product_cat=cat_id AND product_id BETWEEN 71 AND 74";
+	$product_query = "SELECT * FROM products,categories WHERE product_cat=cat_id AND product_id ";
 	$run_query = mysqli_query($con,$product_query);
 	if(mysqli_num_rows($run_query) > 0){
         
@@ -139,7 +139,7 @@ if(isset($_POST["gethomeProduct"])){
 									<div class='product-body'>
 										<p class='product-category'>$cat_name</p>
 										<h3 class='product-name header-cart-item-name'><a href='product.php?p=$pro_id'>$pro_title</a></h3>
-										<h4 class='product-price header-cart-item-info'>$pro_price<del class='product-old-price'>shs990.00</del></h4>
+										<h4 class='product-price header-cart-item-info'>Shs $pro_price<del class='product-old-price'></del></h4>
 										<div class='product-rating'>
 											<i class='fa fa-star'></i>
 											<i class='fa fa-star'></i>
@@ -201,7 +201,7 @@ if(isset($_POST["get_seleted_Category"]) ||  isset($_POST["search"])){
 									<div class='product-body'>
 										<p class='product-category'>$cat_name</p>
 										<h3 class='product-name header-cart-item-name'><a href='product.php?p=$pro_id'>$pro_title</a></h3>
-										<h4 class='product-price header-cart-item-info'>$pro_price<del class='product-old-price'>shs990.00</del></h4>
+										<h4 class='product-price header-cart-item-info'>Shs $pro_price<del class='product-old-price'></del></h4>
 										<div class='product-rating'>
 											<i class='fa fa-star'></i>
 											<i class='fa fa-star'></i>
@@ -209,11 +209,7 @@ if(isset($_POST["get_seleted_Category"]) ||  isset($_POST["search"])){
 											<i class='fa fa-star'></i>
 											<i class='fa fa-star'></i>
 										</div>
-										<div class='product-btns'>
-											<button class='add-to-wishlist' tabindex='0'><i class='fa fa-heart-o'></i><span class='tooltipp'>add to wishlist</span></button>
-											<button class='add-to-compare'><i class='fa fa-exchange'></i><span class='tooltipp'>add to compare</span></button>
-											<button class='quick-view' ><i class='fa fa-eye'></i><span class='tooltipp'>quick view</span></button>
-										</div>
+										
 									</div>
 									<div class='add-to-cart'>
 										<button pid='$pro_id' id='product' href='#' tabindex='0' class='add-to-cart-btn'><i class='fa fa-shopping-cart'></i> add to cart</button>

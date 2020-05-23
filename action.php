@@ -121,25 +121,20 @@ if(isset($_POST["getProduct"])){
 									<div class='product-img'>
 										<img src='product_images/$pro_image' style='max-height: 170px;' alt=''>
 										<div class='product-label'>
-											<span class='sale'>-30%</span>
-											<span class='new'>NEW</span>
 										</div>
 									</div></a>
 									<div class='product-body'>
 										<p class='product-category'>$cat_name</p>
 										<h3 class='product-name header-cart-item-name'><a href='product.php?p=$pro_id'>$pro_title</a></h3>
-										<h4 class='product-price header-cart-item-info'>$pro_price<del class='product-old-price'>shs990.00</del></h4>
+										<h4 class='product-price header-cart-item-info'>Shs $pro_price<del class='product-old-price'></del></h4>
 										<div class='product-rating'>
 											<i class='fa fa-star'></i>
-											<i class='fa fa-star'></i>
+											<i class='fa fa-star'></i>>
 											<i class='fa fa-star'></i>
 											<i class='fa fa-star'></i>
 											<i class='fa fa-star'></i>
 										</div>
 										<div class='product-btns'>
-											<button class='add-to-wishlist'><i class='fa fa-heart-o'></i><span class='tooltipp'>add to wishlist</span></button>
-											<button class='add-to-compare'><i class='fa fa-exchange'></i><span class='tooltipp'>add to compare</span></button>
-											<button class='quick-view'><i class='fa fa-eye'></i><span class='tooltipp'>quick view</span></button>
 										</div>
 									</div>
 									<div class='add-to-cart'>
@@ -187,14 +182,12 @@ if(isset($_POST["get_seleted_Category"]) || isset($_POST["selectBrand"]) || isse
 									<div class='product-img'>
 										<img  src='product_images/$pro_image'  style='max-height: 170px;' alt=''>
 										<div class='product-label'>
-											<span class='sale'>-30%</span>
-											<span class='new'>NEW</span>
 										</div>
 									</div></a>
 									<div class='product-body'>
 										<p class='product-category'>$cat_name</p>
 										<h3 class='product-name header-cart-item-name'><a href='product.php?p=$pro_id'>$pro_title</a></h3>
-										<h4 class='product-price header-cart-item-info'>$pro_price<del class='product-old-price'>shs990.00</del></h4>
+										<h4 class='product-price header-cart-item-info'>Shs $pro_price<del class='product-old-price'></del></h4>
 										<div class='product-rating'>
 											<i class='fa fa-star'></i>
 											<i class='fa fa-star'></i>
@@ -202,11 +195,7 @@ if(isset($_POST["get_seleted_Category"]) || isset($_POST["selectBrand"]) || isse
 											<i class='fa fa-star'></i>
 											<i class='fa fa-star'></i>
 										</div>
-										<div class='product-btns'>
-											<button class='add-to-wishlist' tabindex='0'><i class='fa fa-heart-o'></i><span class='tooltipp'>add to wishlist</span></button>
-											<button class='add-to-compare'><i class='fa fa-exchange'></i><span class='tooltipp'>add to compare</span></button>
-											<button class='quick-view' ><i class='fa fa-eye'></i><span class='tooltipp'>quick view</span></button>
-										</div>
+										
 									</div>
 									<div class='add-to-cart'>
 										<button pid='$pro_id' id='product' href='#' tabindex='0' class='add-to-cart-btn'><i class='fa fa-shopping-cart'></i> add to cart</button>
@@ -305,10 +294,10 @@ if (isset($_POST["Common"])) {
 
 	if (isset($_SESSION["uid"])) {
 		//When user is logged in this query will execute
-		$sql = "SELECT a.product_id,a.product_title,a.product_price,a.product_image,b.id,b.qty FROM products a,cart b WHERE a.product_id=b.p_id AND b.user_id='$_SESSION[uid]'";
+		$sql = "SELECT a.product_id,a.product_title,a.product_price,a.product_image,a.product_desc,b.id,b.qty FROM products a,cart b WHERE a.product_id=b.p_id AND b.user_id='$_SESSION[uid]'";
 	}else{
 		//When user is not logged in this query will execute
-		$sql = "SELECT a.product_id,a.product_title,a.product_price,a.product_image,b.id,b.qty FROM products a,cart b WHERE a.product_id=b.p_id AND b.ip_add='$ip_add' AND b.user_id < 0";
+		$sql = "SELECT a.product_id,a.product_title,a.product_price,a.product_image,a.product_desc,b.id,b.qty FROM products a,cart b WHERE a.product_id=b.p_id AND b.ip_add='$ip_add' AND b.user_id < 0";
 	}
 	$query = mysqli_query($con,$sql);
 	if (isset($_POST["getCartItem"])) {
@@ -323,6 +312,7 @@ if (isset($_POST["Common"])) {
 				$product_title = $row["product_title"];
 				$product_price = $row["product_price"];
 				$product_image = $row["product_image"];
+				$product_desc = $row["product_desc"];
 				$cart_item_id = $row["id"];
 				$qty = $row["qty"];
 				$total_price=$total_price+$product_price;
@@ -335,7 +325,7 @@ if (isset($_POST["Common"])) {
 												</div>
 												<div class="product-body">
 													<h3 class="product-name"><a href="#">'.$product_title.'</a></h3>
-													<h4 class="product-price"><span class="qty">'.$n.'</span>$'.$product_price.'</h4>
+													<h4 class="product-price"><span class="qty">'.$n.'</span> Shs '.$product_price.'</h4>
 												</div>
 												
 											</div>'
@@ -347,7 +337,7 @@ if (isset($_POST["Common"])) {
             
             echo '<div class="cart-summary">
 				    <small class="qty">'.$n.' Item(s) selected</small>
-				    <h5>$'.$total_price.'</h5>
+				    <h5>Shs '.$total_price.'</h5>
 				</div>'
             ?>
 				
@@ -386,6 +376,7 @@ if (isset($_POST["Common"])) {
 					$product_title = $row["product_title"];
 					$product_price = $row["product_price"];
 					$product_image = $row["product_image"];
+					$product_desc = $row["product_desc"];
 					$cart_item_id = $row["id"];
 					$qty = $row["qty"];
 
@@ -401,7 +392,7 @@ if (isset($_POST["Common"])) {
 									</div>
 									<div class="col-sm-6">
 										<div style="max-width=50px;">
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+										<p>'.$product_desc.'</p>
 										</div>
 									</div>
 									

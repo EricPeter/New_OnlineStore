@@ -77,7 +77,7 @@ include "header.php";
                                     
                                 
                                 <div class="col-md-5 col-md-push-2">
-                                <div id="product-main-img">
+                                <div id="product-main-img"  >
                                     <div class="product-preview">
                                         <img src="product_images/'.$row['product_image'].'" alt="">
                                     </div>
@@ -172,6 +172,9 @@ include "header.php";
 								</div>
 								<div class="btn-group" style="margin-left: 25px; margin-top: 15px">
 								<button class="add-to-cart-btn" pid="<?php echo $row['product_id'];?>"  id="product" ><i class="fa fa-shopping-cart"></i> add to cart</button>
+								</div>
+								<div class="btn-group" style="margin-right: 25px; margin-top: 15px">
+								<a href="cart.php"><button class="add-to-cart-btn"  ><i class="fa fa-shopping-cart"></i>View Cart</button></a>
                                 </div>
 								
 								
@@ -475,10 +478,7 @@ include "header.php";
 								<a href='product.php?p=$pro_id'><div class='product'>
 									<div class='product-img'>
 										<img src='product_images/$pro_image' style='max-height: 170px;' alt=''>
-										<div class='product-label'>
-											<span class='sale'>-30%</span>
-											<span class='new'>NEW</span>
-										</div>
+										
 									</div></a>
 									<div class='product-body'>
 										<p class='product-category'>$cat_name</p>
@@ -490,11 +490,6 @@ include "header.php";
 											<i class='fa fa-star'></i>
 											<i class='fa fa-star'></i>
 											<i class='fa fa-star'></i>
-										</div>
-										<div class='product-btns'>
-											<button class='add-to-wishlist'><i class='fa fa-heart-o'></i><span class='tooltipp'>add to wishlist</span></button>
-											<button class='add-to-compare'><i class='fa fa-exchange'></i><span class='tooltipp'>add to compare</span></button>
-											<button class='quick-view'><i class='fa fa-eye'></i><span class='tooltipp'>quick view</span></button>
 										</div>
 									</div>
 									<div class='add-to-cart'>
