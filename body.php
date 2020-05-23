@@ -9,11 +9,12 @@
 				<!-- row -->
 				<div class="row">
 					<!-- shop -->
-					<div class="col-md-4 col-xs-6">
-						<a href="product.php?p=78"><div class="shop">
+					<div class="col-md-4 col-xs-6" >
+						<a href="product.php?p=78"><div class="shop" >
 							<div class="shop-img">
 								 <img src="images/george-walker-eKf44HSIH1E-unsplash.jpg" alt="" style="height:250px;color:white;">
 							</div>
+							
 							<div class="shop-body">
 								<h3>Poultry<br>products</h3>
 								<a href="store.php" class="cta-btn">Shop now <i class="fa fa-arrow-circle-right"></i></a>
