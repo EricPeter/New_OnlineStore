@@ -232,7 +232,7 @@ span.price {
 				</table>
 				<hr>
 				
-				<h3>total<span class='price' style='color:black'><b>$$total</b></span></h3>";
+				<h3>total<span class='price' style='color:black'><b>Shs $total</b></span></h3>";
 					
 				}
 				?>
