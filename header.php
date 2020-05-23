@@ -14,6 +14,7 @@ session_start();
 		<title>Online Store</title>
 
 		<!-- Google font -->
+		<!-- Core Style CSS -->
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
 
 		<!-- Bootstrap -->
@@ -53,9 +54,9 @@ session_start();
         }
         #header {
   
-            background: #780206;  /* fallback for old browsers */
-            background: -webkit-linear-gradient(to right, #061161, #780206);  /* Chrome 10-25, Safari 5.1-6 */
-            background: linear-gradient(to right, #061161, #780206); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            /*background: #780206;   fallback for old browsers */
+            /*background: -webkit-linear-gradient(to right, #061161, #780206);  /* Chrome 10-25, Safari 5.1-6 */*/
+            /*background: linear-gradient(to right, #061161, #780206);  W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   
         }
@@ -174,12 +175,14 @@ session_start();
 					<div class="row">
 						<!-- LOGO -->
 						<div class="col-md-3">
+
 							<div class="header-logo">
 								<a href="index.php" class="logo">
-                                <img src="img/CWI1.png" style="width:150px;height:120px;color:white;">
+                                <img src="img/CWI1.png" style="width:80px;height:50px;color:white;">
 								</a>
+
 							</div>
-							
+							<h1>CWI </h1>
 						</div>
 						<!-- /LOGO -->
 
