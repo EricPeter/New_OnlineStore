@@ -7,7 +7,7 @@ if(isset($_POST["category"])){
     
 	$run_query = mysqli_query($con,$category_query) or die(mysqli_error($con));
 	echo "
-		
+	
             
             <div class='aside'>
 							<h3 class='aside-title'>Categories</h3>
